@@ -14,7 +14,7 @@
     </parent>
     <groupId>matt.springframework</groupId>
     <artifactId>spring-pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>spring-pet-clinic</name>
     <description>Spring framework pet clinic</description>
 
@@ -42,6 +42,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Mlumpkin14/spring-pet-clinic.git</developerConnection>
+    <tag>spring-pet-clinic-0.0.2</tag>
   </scm>
 
 </project>
