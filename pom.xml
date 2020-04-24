@@ -42,7 +42,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Mlumpkin14/spring-pet-clinic.git</developerConnection>
-      <tag>HEAD</tag>
   </scm>
 
 </project>
