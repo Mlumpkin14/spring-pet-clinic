@@ -4,11 +4,8 @@ import matt.springframework.springpetclinic.model.Owner;
 
 import java.util.Set;
 
-public interface OwnerServices {
+public interface OwnerServices extends CrudService<Owner, Long> {
 
-    Owner findById(Long id);
+    Owner findByLastName(String lastName);
 
-    Owner save(Owner owner);
-
-    Set<Owner> findAll();
 }
