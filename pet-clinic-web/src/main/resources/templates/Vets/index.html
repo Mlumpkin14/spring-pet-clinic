@@ -13,10 +13,10 @@
         <th>First Name</th>
         <th>Last</th>
     </tr>
-    <tr th:each="author : ${authors}">
-        <td th:text="${author.id}">123</td>
-        <td th:text="${author.firstName}">Joe</td>
-        <td th:text="${author.lastName}">Buck</td>
+    <tr th:each="vet : ${vets}">
+        <td th:text="${vet.id}">123</td>
+        <td th:text="${vet.firstName}">Joe</td>
+        <td th:text="${vet.lastName}">Buck</td>
     </tr>
 </table>
 
