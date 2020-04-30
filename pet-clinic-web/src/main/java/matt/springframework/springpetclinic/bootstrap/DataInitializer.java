@@ -15,9 +15,10 @@ public class DataInitializer implements CommandLineRunner {
     private final OwnerServices ownerServices;
     private final VetService vetService;
 
-    public DataInitializer() {
-        ownerServices = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataInitializer(OwnerServices ownerServices, VetService vetService) {
+        this.ownerServices = ownerServices;
+        this.vetService = vetService;
+
     }
 
     @Override

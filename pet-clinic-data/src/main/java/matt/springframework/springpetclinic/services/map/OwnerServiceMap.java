@@ -4,9 +4,10 @@ import com.sun.xml.bind.v2.model.core.ID;
 import matt.springframework.springpetclinic.model.Owner;
 import matt.springframework.springpetclinic.services.CrudService;
 import matt.springframework.springpetclinic.services.OwnerServices;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerServices {
     @Override
     public Set<Owner> findAll() {
