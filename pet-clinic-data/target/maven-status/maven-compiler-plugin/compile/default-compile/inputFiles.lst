@@ -1,5 +1,14 @@
-/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/model/Owner.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/services/map/OwnerServiceMap.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/services/VetService.java
 /home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/model/PetType.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/services/OwnerServices.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/services/map/PetServiceMap.java
 /home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/model/Pet.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/services/map/VetServiceMap.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/services/map/AbstractMapService.java
 /home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/model/Vet.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/services/PetService.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/model/Owner.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/model/BaseEntity.java
 /home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/model/Person.java
+/home/matthew/spring-pet-clinic/pet-clinic-data/src/main/java/matt/springframework/springpetclinic/services/CrudService.java
