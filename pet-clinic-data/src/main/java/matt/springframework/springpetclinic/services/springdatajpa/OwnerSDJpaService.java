@@ -39,7 +39,7 @@ public class OwnerSDJpaService implements OwnerServices {
 
         ownerRepository.findAll().forEach(owners::add);
 
-        return null;
+        return owners;
     }
 
     @Override
