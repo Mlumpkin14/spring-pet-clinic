@@ -2,16 +2,13 @@ package matt.springframework.springpetclinic.services.map;
 
 import matt.springframework.springpetclinic.model.Visit;
 import matt.springframework.springpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit,Long> implements VisitService {
 
-    private final VisitService visitService;
-
-    public VisitMapService(VisitService visitService) {
-        this.visitService = visitService;
-    }
 
     @Override
     public Set<Visit> findAll() {
@@ -24,8 +21,13 @@ public class VisitMapService extends AbstractMapService<Visit,Long> implements V
     }
 
     @Override
-    public Visit save(Visit object) {
-        return null;
+    public Visit save(Visit visit) {
+
+        if(visit.getPet() == null || visit.getPet().getOwner() == null || visit.getPet().getId() == null ||
+                visit.getPet().getOwner().getId() == null)
+            throw new RuntimeException("Invalid Visit");
+
+        return super.save(visit);
     }
 
     @Override

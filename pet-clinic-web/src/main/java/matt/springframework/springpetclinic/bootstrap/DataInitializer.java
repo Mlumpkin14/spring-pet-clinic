@@ -14,13 +14,17 @@ public class DataInitializer implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
-    public DataInitializer(OwnerServices ownerServices, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataInitializer(OwnerServices ownerServices, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService, VisitService visitService) {
         this.ownerServices = ownerServices;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
+
     }
+
 
     @Override
     public void run(String... args) throws Exception {
@@ -30,8 +34,6 @@ public class DataInitializer implements CommandLineRunner {
         if(count == 0){
             loadData();
         }
-
-
 
     }
 
@@ -74,6 +76,13 @@ public class DataInitializer implements CommandLineRunner {
 
         ownerServices.save(owner1);
 
+        Visit dogVisit = new Visit();
+        dogVisit.setPet(tonyPet);
+        dogVisit.setDate(LocalDate.now());
+        dogVisit.setDescription("Dog has an itch");
+
+        visitService.save(dogVisit);
+
         Owner owner2 = new Owner();
         owner2.setFirstName("Steve");
         owner2.setLastName("Rogers");
@@ -89,6 +98,13 @@ public class DataInitializer implements CommandLineRunner {
         owner2.getPets().add(stevePet);
 
         ownerServices.save(owner2);
+
+        Visit catVisit = new Visit();
+        catVisit.setPet(stevePet);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Cat has Sneeze");
+
+        visitService.save(catVisit);
 
         System.out.println("Loaded Owners... ");
 
