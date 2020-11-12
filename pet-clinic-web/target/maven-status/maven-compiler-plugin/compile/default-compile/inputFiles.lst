@@ -1,5 +1,5 @@
-/home/matthew/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/controllers/OwnerController.java
-/home/matthew/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/controllers/IndexController.java
-/home/matthew/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/SpringPetClinicApplication.java
-/home/matthew/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/controllers/VetController.java
-/home/matthew/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/bootstrap/DataInitializer.java
+/home/matt/src/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/controllers/VetController.java
+/home/matt/src/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/SpringPetClinicApplication.java
+/home/matt/src/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/bootstrap/DataInitializer.java
+/home/matt/src/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/controllers/OwnerController.java
+/home/matt/src/spring-pet-clinic/pet-clinic-web/src/main/java/matt/springframework/springpetclinic/controllers/IndexController.java
