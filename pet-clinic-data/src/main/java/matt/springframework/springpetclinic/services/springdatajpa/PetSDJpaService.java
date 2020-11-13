@@ -4,10 +4,14 @@ import matt.springframework.springpetclinic.model.Pet;
 import matt.springframework.springpetclinic.repositories.PetRepository;
 import matt.springframework.springpetclinic.services.PetService;
 import org.hibernate.cache.spi.access.CachedDomainDataAccess;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
+@Profile("springdatajpa")
 public class PetSDJpaService implements PetService {
 
     private final PetRepository petRepository;
